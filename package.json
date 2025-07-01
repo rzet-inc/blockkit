@@ -1,0 +1,60 @@
+{
+  "name": "@rzet/blockkit",
+  "version": "1.0.5",
+  "description": "The most accurate and lightweight crypto address validator",
+  "author": "RZet, Inc.",
+  "license": "MIT",
+  "homepage": "https://github.com/rzet-inc/blockkit#readme",
+  "bugs": {
+    "url": "https://github.com/rzet-inc/blockkit/issues"
+  },
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "test": "jest",
+    "lint": "eslint src --ext .ts",
+    "prepublishOnly": "npm run build && npm test",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "crypto",
+    "blockchain",
+    "bitcoin",
+    "ethereum",
+    "address",
+    "validation",
+    "kaia",
+    "web3"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rzet-inc/blockkit.git"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^15.0.0",
+    "@rollup/plugin-typescript": "^11.0.0",
+    "@types/jest": "^29.5.0",
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0",
+    "jest": "^29.5.0",
+    "rollup": "^3.20.0",
+    "ts-jest": "^29.1.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.0.0"
+  }
+}

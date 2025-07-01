@@ -1,0 +1,36 @@
+# Source files
+src/
+tests/
+*.ts
+!dist/**/*.d.ts
+
+# Config files
+.eslintrc.js
+jest.config.js
+rollup.config.js
+tsconfig.json
+CLAUDE.md
+
+# Git
+.git/
+.gitignore
+
+# Development
+node_modules/
+coverage/
+*.log
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Example directory
+example/
+
+# Package tarballs
+*.tgz
